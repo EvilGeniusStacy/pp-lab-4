@@ -20,10 +20,10 @@ public class Worker extends Employee {
 
     @Override
     public String toString() {
-        return "Worker:{" +
-                "fullName='" + getName() + '\'' +
-                ", salary=" + getSalary() +
-                ", position='" + position + '\'' +
+        return "Pracownik:{" +
+                "Imię:'" + getName() + '\'' +
+                ", wypłata:" + getSalary() +
+                ", pozycja:'" + position + '\'' +
                 '}';
     }
 }

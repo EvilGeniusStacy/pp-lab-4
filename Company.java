@@ -1,4 +1,5 @@
 import employees.Employee;
+import employees.Manager;
 
 public class Company {
 
@@ -12,14 +13,19 @@ public class Company {
         employees[3] = new Employee("pracownik 4", 3500.0);
         employees[4] = new Employee("pracownik 5", 4000.0);
 
-        System.out.println("Dane pracownika o indeksie 3:");
-        System.out.println(employees[3]);
+   int nonManagerCount = 0;
+   for (Employee employee : employees) {
+       if (!(employee instanceof Manager)) {
+           nonManagerCount++;
+       }
+   }
+   ((Manager) employees[0]).setNumberOfSubordinates(nonManagerCount);
 
-        employees[3].setSalary(4500.0);
+   employees[0].setSalary(7500.0);
 
-        System.out.println("Dane wszystkich pracowników:");
-        for (Employee employee : employees) {
-            System.out.println(employee);
-        }
-    }
+   System.out.println("Dane wszystkich pracowników:");
+   for (Employee employee : employees) {
+       System.out.println(employee);
+   }
+}
 }
