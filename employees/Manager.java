@@ -20,9 +20,9 @@ public class Manager extends Employee {
     @Override
     public String toString() {
         return "Manager:{" +
-                "fullName='" + getName() + '\'' +
-                ", salary=" + getSalary() +
-                ", numberOfSubordinates=" + numberOfSubordinates +
+                "Imię:'" + getName() + '\'' +
+                ", wypłąta:" + getSalary() +
+                ", liczba podwłacnych:" + numberOfSubordinates +
                 '}';
     }
 }
