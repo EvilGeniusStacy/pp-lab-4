@@ -1,11 +1,9 @@
 package employees;
 
 public class Worker extends Employee {
-    public static void main(String[] args) {
-        
-    }
+    
 
-    private String position;
+    public String position;
 
     public Worker(String fullName, double salary, String position) {
         super(fullName, salary);

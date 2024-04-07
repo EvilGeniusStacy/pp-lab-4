@@ -2,7 +2,7 @@ package employees;
 
 public class Manager extends Employee {
 
-    private int numberOfSubordinates;
+    public int numberOfSubordinates;
 
     public Manager(String fullName, double salary, int numberOfSubordinates) {
         super(fullName, salary);
